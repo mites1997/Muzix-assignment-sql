@@ -106,7 +106,7 @@ public class TrackController {
         System.out.println(track.toString());
     }*/
 
-    @GetMapping("track")
+    @GetMapping("tracks")
     public ResponseEntity<?> getAllTracks() {
         ResponseEntity responseEntity = new ResponseEntity<>(trackService.getAllTracks(), HttpStatus.OK);
         System.out.println(trackService.getByTrackName("hello").toString());
